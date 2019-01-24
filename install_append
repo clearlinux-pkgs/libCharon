@@ -1,0 +1,1 @@
+for src in %{buildroot}/usr/lib64/python*/site-packages; do dest=$(sed 's!/usr/lib64/!/usr/lib/!' <<< ${src}); mkdir -p $(dirname ${dest}); mv ${src} $(dirname ${dest}); done
