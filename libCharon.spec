@@ -4,7 +4,7 @@
 #
 Name     : libCharon
 Version  : 4.6.1
-Release  : 13
+Release  : 14
 URL      : https://github.com/Ultimaker/libCharon/archive/4.6.1/libCharon-4.6.1.tar.gz
 Source0  : https://github.com/Ultimaker/libCharon/archive/4.6.1/libCharon-4.6.1.tar.gz
 Summary  : No detailed summary available
@@ -15,12 +15,10 @@ Requires: libCharon-license = %{version}-%{release}
 Requires: libCharon-python = %{version}-%{release}
 Requires: libCharon-python3 = %{version}-%{release}
 Requires: libCharon-services = %{version}-%{release}
-Requires: typing
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-distutils3
 BuildRequires : python3
 BuildRequires : python3-dev
-BuildRequires : typing
 
 %description
 # libCharon
@@ -80,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1588267498
+export SOURCE_DATE_EPOCH=1588359935
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -93,7 +91,7 @@ make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1588267498
+export SOURCE_DATE_EPOCH=1588359935
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libCharon
 cp %{_builddir}/libCharon-4.6.1/LICENSE %{buildroot}/usr/share/package-licenses/libCharon/2fa84abcb9ebd82e02a9ba263551d24b04e8c691
