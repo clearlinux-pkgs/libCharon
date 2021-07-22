@@ -4,7 +4,7 @@
 #
 Name     : libCharon
 Version  : 4.9.1
-Release  : 28
+Release  : 29
 URL      : https://github.com/Ultimaker/libCharon/archive/4.9.1/libCharon-4.9.1.tar.gz
 Source0  : https://github.com/Ultimaker/libCharon/archive/4.9.1/libCharon-4.9.1.tar.gz
 Summary  : No detailed summary available
